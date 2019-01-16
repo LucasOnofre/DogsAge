@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DogsAge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cachorro" translatesAutoresizingMaskIntoConstraints="NO" id="DEQ-h1-vdG">
+                                <rect key="frame" x="60" y="40" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="3Iq-b8-b9h"/>
+                                    <constraint firstAttribute="height" constant="200" id="sMv-oP-kCw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite a idade do seu cachorro, para descobrir a idade em anos humanos." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Nx-SK-Mj0">
+                                <rect key="frame" x="15" y="260" width="290" height="60"/>
+                                <color key="backgroundColor" red="0.47882311895390006" green="0.70113072853116698" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="aA6-Rd-3br"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite a idade" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Ns-AS-VdR">
+                                <rect key="frame" x="105" y="340" width="110" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0R-rV-JvG">
+                                <rect key="frame" x="5" y="435" width="310" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="YC2-QB-wq4">
+                                <rect key="frame" x="85" y="380" width="150" height="35"/>
+                                <color key="backgroundColor" red="0.47882311900000002" green="0.70113072850000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="8cy-RL-aJv"/>
+                                    <constraint firstAttribute="width" constant="150" id="QlC-3c-BVj"/>
+                                </constraints>
+                                <state key="normal" title="Descobrir idade"/>
+                                <connections>
+                                    <action selector="descobrirIdade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3M6-ce-AiR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.37254901960784315" green="0.60392156862745094" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q0R-rV-JvG" secondAttribute="trailing" constant="5" id="6eK-8v-FVX"/>
+                            <constraint firstItem="6Nx-SK-Mj0" firstAttribute="centerX" secondItem="DEQ-h1-vdG" secondAttribute="centerX" id="AfX-Kb-sGk"/>
+                            <constraint firstItem="YC2-QB-wq4" firstAttribute="centerX" secondItem="3Ns-AS-VdR" secondAttribute="centerX" id="GFI-jn-8Le"/>
+                            <constraint firstItem="DEQ-h1-vdG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NU6-yS-gIi"/>
+                            <constraint firstItem="3Ns-AS-VdR" firstAttribute="top" secondItem="6Nx-SK-Mj0" secondAttribute="bottom" constant="20" id="RIe-g3-uvn"/>
+                            <constraint firstItem="6Nx-SK-Mj0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="RVA-3Q-9RI"/>
+                            <constraint firstItem="Q0R-rV-JvG" firstAttribute="centerX" secondItem="YC2-QB-wq4" secondAttribute="centerX" id="am2-Oa-7NW"/>
+                            <constraint firstItem="6Nx-SK-Mj0" firstAttribute="top" secondItem="DEQ-h1-vdG" secondAttribute="bottom" constant="20" id="ewq-5T-KNC"/>
+                            <constraint firstItem="YC2-QB-wq4" firstAttribute="top" secondItem="3Ns-AS-VdR" secondAttribute="bottom" constant="10" id="fCM-3m-ku4"/>
+                            <constraint firstItem="Q0R-rV-JvG" firstAttribute="top" secondItem="YC2-QB-wq4" secondAttribute="bottom" constant="20" id="kew-nG-8S3"/>
+                            <constraint firstItem="DEQ-h1-vdG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="lSR-Mr-UhE"/>
+                            <constraint firstItem="Q0R-rV-JvG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="rgL-Zo-eX7"/>
+                            <constraint firstItem="3Ns-AS-VdR" firstAttribute="centerX" secondItem="6Nx-SK-Mj0" secondAttribute="centerX" id="se1-hz-YNf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="campoIdade" destination="3Ns-AS-VdR" id="dQa-gq-nHh"/>
+                        <outlet property="idadeResultado" destination="Q0R-rV-JvG" id="SFk-G2-d41"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.25" y="133.09859154929578"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cachorro" width="421" height="404"/>
+    </resources>
+</document>
